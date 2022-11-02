@@ -1,38 +1,140 @@
 .App {
-  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 4vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.form {
+  width: 40%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.image {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  background: #aaa22255;
+  align-items: center;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.background-image {
+  width: 100%;
+  height: auto;
+}
+.hero {
+  width: 350px;
+}
+.hero-title {
+  line-height: 40px;
+  font-weight: 500;
+}
+.hero-text {
+  line-height: 60px;
+}
+.google-link img {
+  margin-right: 10px;
+  width: 20px;
+}
+.hr {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+hr {
+  height: 2px;
+  width: 45%;
+}
+.google-link {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 350px;
+  height: 30vh;
+  position: relative;
+}
+#input-email,
+#input-password {
+  width: 99%;
+  height: 50px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #555;
+  outline: none;
+  font-size: 24px;
+  margin-bottom: 20px;
+  transition: 0.4s ease-in;
+}
+.email-label,
+.password-label {
+  color: #555;
+  position: absolute;
+  left: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.2s ease-in;
+  transform: translateY(10px);
+}
+#input-email:focus ~ .email-label,
+#input-email:valid ~ .email-label {
+  transform: translateY(-10px);
+  font-size: 15px;
+}
+#input-password:focus ~ .password-label,
+#input-password:valid ~ .password-label {
+  transform: translateY(-10px);
+  font-size: 15px;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+.box div {
+  width: 52%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.box label {
+  font-weight: 500;
+}
+.submit {
+  width: 100%;
+  height: 50px;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: #111;
+  color: #eee;
+  font-size: 18px;
+  margin-top: 18px;
+  border-radius: 10px;
+}
+.signup {
+  width: 58%;
+  margin-top: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.signup a {
+  font-weight: 500;
 }
